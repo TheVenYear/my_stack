@@ -21,20 +21,20 @@ int main()
 		stack3.Add(i + 1);
 	}
 
-	clock_t start = clock();
+	double start = clock();
 	stack1.Add(228);
-	clock_t end = clock();
-	printf("%f - время, затраченное на добавление эл-та в стек размером 100\n", (double)(end - start) / CLOCKS_PER_SEC);
+	double end = clock();
+	printf("%f - время, затраченное на добавление эл-та в стек размером 100\n", (end - start) / CLOCKS_PER_SEC);
 
 	start = clock();
 	stack2.Add(228);
 	end = clock();
-	printf("%f - время, затраченное на добавление эл-та в стек размером 10000\n", (double)(end - start) / CLOCKS_PER_SEC);
+	printf("%f - время, затраченное на добавление эл-та в стек размером 10000\n", (end - start) / CLOCKS_PER_SEC);
 
 	start = clock();
 	stack3.Add(228);
 	end = clock();
-	printf("%f - время, затраченное на добавление эл-та в стек размером 1000000\n", (double)(end - start) / CLOCKS_PER_SEC);
+	printf("%f - время, затраченное на добавление эл-та в стек размером 1000000\n", (end - start) / CLOCKS_PER_SEC);
 
 	system("pause");
 	return 0;
